@@ -39,20 +39,20 @@ class Point2D():
 
 if __name__ == '__main__':
     point1 = Point2D(1,1)
-    print(point1)
+    print('Работа метода __str__: ',point1)
     # del point1 # закоментил,т.к дальше print не будет работать
     str1 = 'volvo'
     list_test = [1,2,3,4]
-    print(len(str1), len(list_test), len(point1))
-    print(point1.distance())
+    print('Работа метода __len__ (в 3-ем Len):',len(str1), len(list_test), len(point1))
+    print('Метод dictance:',point1.distance())
 
     for item in str1:
-        print(item)
+        print('Проэтирировали volvo:',item)
 
     for item in list_test:
-        print(item)
+        print('Проэтирировали list_test:',item)
 
-    print(2 in point1, 1 in point1) # это мы тестим getitem
+    print('Вычислим, находятся ли точки в диапазоне:\n',2 in point1, 1 in point1) # это мы тестим getitem
 
-    for coord in point1:
-        print(coord)
+    # for coord in point1:
+    #     print(coord)
