@@ -12,7 +12,6 @@ from hw_class_Room import Room
 
 
 
-
 room_hallway = Room('Прихожая', 20, 2)
 '''Экземпляр от класса Room '''
 
